@@ -21,10 +21,8 @@
   margin-top: 21px;
 }
 
-@media (max-width: $tablet-only-width) {
-
-}
-
 @media (max-width: $mobile-only-width) {
-
+  .bicycle-type__name {
+    margin-top: 20px;
+  }
 }

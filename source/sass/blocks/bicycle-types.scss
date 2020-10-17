@@ -162,5 +162,39 @@
 }
 
 @media (max-width: $mobile-only-width) {
+  .bicycle-types {
+    /*padding-top: 30px;*/
+    padding-bottom: 38px;
+  }
 
+  .bicycle-types__header {
+
+  }
+
+  .bicycle-types__list {
+    padding: 0 25px;
+  }
+
+  .bicycle-types__item {
+    margin-bottom: 42px;
+
+    &--big-circle-hidden {
+      &::before {
+        top: 201px;
+        left: -24px;
+      }
+    }
+
+    &--small-squares {
+      &::before, &::after {
+        display: none;
+      }
+    }
+
+    &--small-circle {
+      &::before {
+        right: -15px;
+      }
+    }
+  }
 }

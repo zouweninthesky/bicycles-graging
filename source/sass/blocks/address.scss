@@ -46,5 +46,20 @@
 }
 
 @media (max-width: $mobile-only-width) {
+  .address {
+    padding-top: 104px;
+  }
 
+  .address__header {
+    font-size: 18px;
+  }
+
+  .address__description {
+    margin-bottom: 19px;
+    padding: 0 25px;
+  }
+
+  .address__image {
+
+  }
 }

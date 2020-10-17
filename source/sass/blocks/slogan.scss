@@ -77,5 +77,25 @@
 }
 
 @media (max-width: $mobile-only-width) {
+  .slogan {
+    min-height: 390px;
 
+    background-image: url(../img/main-bg-mobile@1x.jpg);
+  }
+
+  .slogan__main-logo-link {
+
+  }
+
+  .slogan__main-logo {
+    margin-left: 15px;
+  }
+
+  .slogan__header {
+    margin-top: 71px;
+  }
+
+  .slogan__description {
+    padding: 0 20px;
+  }
 }
