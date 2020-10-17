@@ -26,7 +26,23 @@
 }
 
 @media (max-width: $tablet-only-width) {
+  .address {
+    padding-top: 135px;
+  }
 
+  .address__header {
+    font-size: 24px;
+  }
+
+  .address__description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .address__image {
+
+  }
 }
 
 @media (max-width: $mobile-only-width) {

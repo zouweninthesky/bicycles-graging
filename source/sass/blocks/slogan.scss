@@ -39,7 +39,41 @@
 }
 
 @media (max-width: $tablet-only-width) {
+  .slogan {
+    min-height: 340px;
+    width: auto;
 
+    padding-left: 0;
+    background-image: url(../img/main-bg-tablet@1x.jpg);
+  }
+
+  .slogan__main-logo-link {
+
+  }
+
+  .slogan__main-logo {
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .slogan__header {
+    text-align: center;
+
+    font-size: 30px;
+    line-height: 42px;
+
+    margin-top: 85px;
+    padding-left: 0;
+  }
+
+  .slogan__description {
+    text-align: center;
+
+    font-size: 18px;
+
+    margin-top: 19px;
+    padding: 0 180px;
+  }
 }
 
 @media (max-width: $mobile-only-width) {

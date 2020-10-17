@@ -11,7 +11,17 @@
 }
 
 @media (max-width: $tablet-only-width) {
+  .intro {
+    min-height: auto;
 
+    padding-top: 0;
+
+    background-image: none;
+  }
+
+  .intro__wrapper {
+    display: block;
+  }
 }
 
 @media (max-width: $mobile-only-width) {
