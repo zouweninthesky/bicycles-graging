@@ -1,0 +1,30 @@
+.bicycle-type {
+
+}
+
+.bicycle-type__figure {
+  margin: 0;
+
+  border-radius: 10px;
+}
+
+.bicycle-type__image {
+
+}
+
+.bicycle-type__name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+
+  margin-top: 21px;
+}
+
+@media (max-width: $tablet-only-width) {
+
+}
+
+@media (max-width: $mobile-only-width) {
+
+}

@@ -1,0 +1,19 @@
+.intro {
+  min-height: 825px;
+
+  padding-top: 318px;
+
+  background-image: url(../img/main-bg-desktop@1x.jpg);
+}
+
+.intro__wrapper {
+  display: flex;
+}
+
+@media (max-width: $tablet-only-width) {
+
+}
+
+@media (max-width: $mobile-only-width) {
+
+}

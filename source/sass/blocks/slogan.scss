@@ -1,0 +1,47 @@
+.slogan {
+  text-align: left;
+  width: 500px;
+
+  padding-left: 71px;
+}
+
+.slogan__main-logo-link {
+
+}
+
+.slogan__main-logo {
+
+}
+
+.slogan__header {
+  color: $color-bg-primary;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+
+  margin-top: 26px;
+  margin-bottom: 0;
+  padding-left: 1px;
+}
+
+.slogan__description {
+  color: $color-bg-primary;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  opacity: 0.8;
+
+  margin-top: 25px;
+  padding-left: 1px;
+  padding-right: 40px;
+}
+
+@media (max-width: $tablet-only-width) {
+
+}
+
+@media (max-width: $mobile-only-width) {
+
+}

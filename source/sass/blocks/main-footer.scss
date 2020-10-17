@@ -1,0 +1,50 @@
+.main-footer {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 23px;
+  padding-bottom: 82px;
+}
+
+.main-footer__list {
+  display: flex;
+
+  list-style: none;
+}
+
+.main-footer__item {
+  font-size: 16px;
+  line-height: 22px;
+
+  &--mail {
+
+  }
+
+  &--phone {
+    margin-left: 120px;
+  }
+}
+
+.main-footer__icon {
+
+  &--mail {
+
+  }
+
+  &--phone {
+
+  }
+}
+
+.main-footer__link {
+  color: $color-font-primary;
+  opacity: 0.5;
+}
+
+@media (max-width: $tablet-only-width) {
+
+}
+
+@media (max-width: $mobile-only-width) {
+
+}

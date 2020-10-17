@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moon</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="main-header">
+      <nav class="main-header__nav main-nav">
+        <button type="button" class="main-nav__toggle"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
+          <li class="main-nav__item"><a href="#bicycle-types" class="main-nav__link">Виды велосипедов</a></li>
+          <li class="main-nav__item"><a href="#video-advice" class="main-nav__link">Видео про велосипеды</a></li>
+          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__wrapper container">
+          <h1 class="visually-hidden">Moon - магазин велосипедов</h1>
+          <section class="slogan">
+            <a href="" class="slogan__main-logo-link">
+              <svg class="slogan__main-logo" width="70" height="20.28">
+                <use xlink:href="#icon-main-logo"></use>
+              </svg>
+            </a>
+            <h2 class="slogan__header">Мы продаем велосипеды</h2>
+            <p class="slogan__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          </section>
+          <section class="application">
+            <form action="" class="application__form">
+              <legend class="application__header">Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
+              <input type="text" class="application__input" placeholder="Введите Ваше Имя">
+              <label class="visually-hidden"></label>
+              <input type="text" class="application__input" placeholder="Введите Ваш номер телефона">
+              <label class="visually-hidden"></label>
+              <button type="submit" class="application__submit">Подобрать велосипед мечты</button>
+            </form>
+          </section>
+        </div>
+      </section>
+      <section class="advantages container">
+        <h2 class="advantages__header">Несколько фактов о нас</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <p class="advantages__number">01</p>
+            <h3 class="advantages__description">Самый широкий выбор велосипедов!</h3>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__number">02</p>
+            <h3 class="advantages__description">Доставка велосипедов по всей России!</h3>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__number">03</p>
+            <h3 class="advantages__description">Большой выбор крутых аксессуаров!</h3>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__number">04</p>
+            <h3 class="advantages__description">Профессиональные консультации!</h3>
+          </li>
+        </ul>
+      </section>
+      <section id="bicycle-types" class="bicycle-types container">
+        <h2 class="bicycle-types__header">Виды велосипедов</h2>
+        <ul class="bicycle-types__list">
+          <li class="bicycle-types__item bicycle-types__item--big-circle-hidden bicycle-type">
+            <figure class="bicycle-type__figure">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/bicycle-type-road-desktop@1x.webp 1x, img/bicycle-type-road-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/bicycle-type-road-mobile@1x.webp 1x, img/bicycle-type-road-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1024px)" srcset="img/bicycle-type-road-desktop@1x.jpg 1x, img/bicycle-type-road-desktop@2x.jpg 2x">
+                <img src="img/bicycle-type-road-mobile@1x.jpg" srcset="img/bicycle-type-road-mobile@2x.jpg 2x" alt="" class="bicycle-type__image">
+              </picture>
+              <figcaption class="bicycle-type__name">Дорожный велосипед</figcaption>
+            </figure>
+          </li>
+          <li class="bicycle-types__item bicycle-types__item--small-squares bicycle-type">
+            <figure class="bicycle-type__figure">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/bicycle-type-mountain-desktop@1x.webp 1x, img/bicycle-type-mountain-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/bicycle-type-mountain-mobile@1x.webp 1x, img/bicycle-type-mountain-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1024px)" srcset="img/bicycle-type-mountain-desktop@1x.jpg 1x, img/bicycle-type-mountain-desktop@2x.jpg 2x">
+                <img src="img/bicycle-type-mountain-mobile@1x.jpg" srcset="img/bicycle-type-mountain-mobile@2x.jpg 2x" alt="" class="bicycle-type__image">
+              </picture>
+              <figcaption class="bicycle-type__name">Горный велосипед</figcaption>
+            </figure>
+          </li>
+          <li class="bicycle-types__item bicycle-types__item--small-circle bicycle-type">
+            <figure class="bicycle-type__figure">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/bicycle-type-kids-desktop@1x.webp 1x, img/bicycle-type-kids-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/bicycle-type-kids-mobile@1x.webp 1x, img/bicycle-type-kids-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1024px)" srcset="img/bicycle-type-kids-desktop@1x.jpg 1x, img/bicycle-type-kids-desktop@2x.jpg 2x">
+                <img src="img/bicycle-type-kids-mobile@1x.jpg" srcset="img/bicycle-type-kids-mobile@2x.jpg 2x" alt="" class="bicycle-type__image">
+              </picture>
+              <figcaption class="bicycle-type__name">Детский велосипед</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <section id="video-advice" class="video-advice">
+        <h2 class="video-advice__header">Видео про велосипеды</h2>
+        <p class="video-advice__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+        <button class="video-advice__play-button">
+          <svg class="video-advice__play-button-icon" width="14" height="21">
+            <use xlink:href="#icon-play"></use>
+          </svg>
+          <span class="visually-hidden">Воспроизвести видео</span>
+        </button>
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.webp 1x, img/video-preview-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-preview-tablet@1x.webp 1x, img/video-preview-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-preview-mobile@1x.webp 1x, img/video-preview-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-preview-tablet@1x.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+          <img src="img/video-preview-mobile@1x.jpg" srcset="img/video-preview-mobile@2x.jpg 2x" alt="" class="video-advice__video">
+        </picture>
+      </section>
+      <section id="contacts" class="address">
+        <h2 class="address__header">Как нас найти?</h2>
+        <p class="address__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-preview-desktop@1x.webp 1x, img/map-preview-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-preview-tablet@1x.webp 1x, img/map-preview-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-preview-mobile@1x.webp 1x, img/map-preview-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1024px)" srcset="img/map-preview-desktop@1x.jpg 1x, img/map-preview-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-preview-tablet@1x.jpg 1x, img/map-preview-tablet@2x.jpg 2x">
+          <img src="img/map-preview-mobile@1x.jpg" srcset="img/map-preview-mobile@2x.jpg 2x" alt="" class="address__image">
+        </picture>
+      </section>
+    </main>
+    <footer class="main-footer container">
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <svg class="main-footer__icon main-footer__icon--mail" width="26" height="20">
+            <use xlink:href="#icon-mail"></use>
+          </svg>
+          <a href="mailto:puteshestviemechta@gmail.ru" class="main-footer__link">puteshestviemechta@gmail.ru</a>
+        </li>
+        <li class="main-footer__item">
+          <svg class="main-footer__icon main-footer__icon--phone" width="17" height="19">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <a href="tel:+749978468446" class="main-footer__link">+7 (499) -784-684-46</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
