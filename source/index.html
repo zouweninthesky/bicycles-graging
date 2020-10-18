@@ -12,13 +12,29 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="main-header">
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav main-nav--no-js">
         <button type="button" class="main-nav__toggle"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
-          <li class="main-nav__item"><a href="#bicycle-types" class="main-nav__link">Виды велосипедов</a></li>
-          <li class="main-nav__item"><a href="#video-advice" class="main-nav__link">Видео про велосипеды</a></li>
-          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a>
+          <svg class="main-nav__link-icon" width="8" height="12">
+            <use xlink:href="#icon-link-arrow">
+          </svg>
+        </li>
+          <li class="main-nav__item"><a href="#bicycle-types" class="main-nav__link">Виды велосипедов</a>
+          <svg class="main-nav__link-icon" width="8" height="12">
+            <use xlink:href="#icon-link-arrow">
+          </svg>
+        </li>
+          <li class="main-nav__item"><a href="#video-advice" class="main-nav__link">Видео про велосипеды</a>
+          <svg class="main-nav__link-icon" width="8" height="12">
+            <use xlink:href="#icon-link-arrow">
+          </svg>
+        </li>
+          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a>
+          <svg class="main-nav__link-icon" width="8" height="12">
+            <use xlink:href="#icon-link-arrow">
+          </svg>
+        </li>
         </ul>
       </nav>
     </header>
@@ -112,39 +128,43 @@
         </div>
       </section>
       <section id="video-advice" class="video-advice">
-        <h2 class="video-advice__header">Видео про велосипеды</h2>
-        <p class="video-advice__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
-        <button class="video-advice__play-button">
-          <svg class="video-advice__play-button-icon video-advice__play-button-icon--desktop" width="14" height="21">
-            <use xlink:href="#icon-play"></use>
-          </svg>
-          <svg class="video-advice__play-button-icon video-advice__play-button-icon--tablet" width="19" height="27">
-            <use xlink:href="#icon-play"></use>
-          </svg>
-          <span class="visually-hidden">Воспроизвести видео</span>
-        </button>
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.webp 1x, img/video-preview-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-preview-tablet@1x.webp 1x, img/video-preview-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-preview-mobile@1x.webp 1x, img/video-preview-mobile@2x.webp 2x">
+        <div class="video-advice__wrapper container">
+          <h2 class="video-advice__header">Видео про велосипеды</h2>
+          <p class="video-advice__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+          <button class="video-advice__play-button">
+            <svg class="video-advice__play-button-icon video-advice__play-button-icon--desktop" width="14" height="21">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+            <svg class="video-advice__play-button-icon video-advice__play-button-icon--tablet" width="19" height="27">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+            <span class="visually-hidden">Воспроизвести видео</span>
+          </button>
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.webp 1x, img/video-preview-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-preview-tablet@1x.webp 1x, img/video-preview-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-preview-mobile@1x.webp 1x, img/video-preview-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-preview-tablet@1x.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
-          <img src="img/video-preview-mobile@1x.jpg" srcset="img/video-preview-mobile@2x.jpg 2x" alt="" class="video-advice__video">
-        </picture>
+            <source media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-preview-tablet@1x.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+            <img src="img/video-preview-mobile@1x.jpg" srcset="img/video-preview-mobile@2x.jpg 2x" alt="" class="video-advice__video">
+          </picture>
+        </div>
       </section>
       <section id="contacts" class="address">
-        <h2 class="address__header">Как нас найти?</h2>
-        <p class="address__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-preview-desktop@1x.webp 1x, img/map-preview-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-preview-tablet@1x.webp 1x, img/map-preview-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-preview-mobile@1x.webp 1x, img/map-preview-mobile@2x.webp 2x">
+        <div class="address__wrapper container">
+          <h2 class="address__header">Как нас найти?</h2>
+          <p class="address__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-preview-desktop@1x.webp 1x, img/map-preview-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-preview-tablet@1x.webp 1x, img/map-preview-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-preview-mobile@1x.webp 1x, img/map-preview-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1024px)" srcset="img/map-preview-desktop@1x.jpg 1x, img/map-preview-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-preview-tablet@1x.jpg 1x, img/map-preview-tablet@2x.jpg 2x">
-          <img src="img/map-preview-mobile@1x.jpg" srcset="img/map-preview-mobile@2x.jpg 2x" alt="" class="address__image">
-        </picture>
+            <source media="(min-width: 1024px)" srcset="img/map-preview-desktop@1x.jpg 1x, img/map-preview-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-preview-tablet@1x.jpg 1x, img/map-preview-tablet@2x.jpg 2x">
+            <img src="img/map-preview-mobile@1x.jpg" srcset="img/map-preview-mobile@2x.jpg 2x" alt="" class="address__image">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="main-footer container">
@@ -163,5 +183,6 @@
         </li>
       </ul>
     </footer>
+    <!-- <script src="js/app.js"></script> -->
   </body>
 </html>
