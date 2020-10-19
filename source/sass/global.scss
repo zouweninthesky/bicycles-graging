@@ -1,4 +1,4 @@
- body {
+body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -9,7 +9,9 @@
   text-align: center;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -42,7 +44,7 @@ a {
 }
 
 .container {
-  width: $desktop-width;
+  max-width: 1440px;
   padding: 0;
   margin: 0 auto;
 }

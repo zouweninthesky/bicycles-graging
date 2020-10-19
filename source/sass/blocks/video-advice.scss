@@ -19,16 +19,15 @@
 }
 
 .video-advice__description {
-  color: $color-bg-primary;
+  color: fade-out($color-bg-primary, 0.3);
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.005em;
-  opacity: 0.7;
 
-  margin-top: 19px;
-  margin-bottom: 0px;
-  padding: 0 750px;
+  width: 340px;
+
+  margin: 19px auto 0;
 }
 
 .video-advice__play-button {
@@ -50,10 +49,22 @@
   border-radius: 40px;
 
   z-index: 5;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    box-shadow: 0 0 14px 4px $color-bg-primary;
+  }
+
+  &:active {
+    box-shadow: 0 0 14px 6px $color-accent;
+  }
 }
 
 .video-advice__play-button-icon {
-
   &--tablet {
     display: none;
   }
@@ -80,25 +91,24 @@
   }
 
   .video-advice__description {
+    width: 450px;
+
     margin-top: 20px;
-    padding: 0 170px;
   }
 
   .video-advice__play-button {
     bottom: 11px;
 
     width: 90px;
-    height:  90px;
+    height: 90px;
 
     padding-top: 5px;
     padding-left: 12px;
 
     border-radius: 90px;
-
   }
 
   .video-advice__play-button-icon {
-
     &--desktop {
       display: none;
     }
@@ -120,23 +130,21 @@
     padding-top: 63px;
   }
 
-  .video-advice__header {
-  }
-
   .video-advice__description {
+    width: 288px;
+
     margin-top: 21px;
-    padding: 0 10px;
+    padding: 0;
   }
 
   .video-advice__play-button {
     bottom: 0;
 
     width: 65px;
-    height:  65px;
+    height: 65px;
   }
 
   .video-advice__play-button-icon {
-
     &--desktop {
       display: inline;
     }

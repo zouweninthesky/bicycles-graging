@@ -3,27 +3,42 @@
 
   padding-top: 318px;
 
-  background-image: url(../img/main-bg-desktop@1x.jpg);
+  background-image: url("../img/main-bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: $color-font-secondary;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/main-bg@2x.jpg");
+  }
 }
 
 .intro__wrapper {
   display: flex;
+
+  justify-content: space-between;
+
+  max-width: 880px;
+
+  margin: 0 auto;
 }
 
 @media (max-width: $tablet-only-width) {
   .intro {
     min-height: auto;
 
-    padding-top: 0;
+    padding: 0;
 
     background-image: none;
+    background-color: transparent;
   }
 
   .intro__wrapper {
     display: block;
+
+    max-width: none;
+
+    margin: 0;
   }
-}
-
-@media (max-width: $mobile-only-width) {
-
 }

@@ -5,7 +5,7 @@ var toggle = document.querySelector('.main-nav__toggle');
 var openMenu = function () {
   if (nav.classList.contains('main-nav--closed')) {
     nav.classList.remove('main-nav--closed');
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     document.body.style.overflow = 'hidden';
   } else {
     nav.classList.add('main-nav--closed');

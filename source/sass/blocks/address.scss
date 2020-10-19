@@ -16,13 +16,9 @@
   font-size: 17px;
   line-height: 31px;
 
-  margin-top: 29px;
-  margin-bottom: 40px;
-  padding: 0 700px;
-}
+  width: 500px;
 
-.address__image {
-
+  margin: 29px auto 40px;
 }
 
 @media (max-width: $tablet-only-width) {
@@ -35,13 +31,11 @@
   }
 
   .address__description {
+    width: auto;
+
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 0;
-  }
-
-  .address__image {
-
   }
 }
 
@@ -57,9 +51,5 @@
   .address__description {
     margin-bottom: 19px;
     padding: 0 25px;
-  }
-
-  .address__image {
-
   }
 }

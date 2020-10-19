@@ -2,11 +2,7 @@
   width: 327px;
 
   margin-top: 5px;
-  margin-left: 125px;
-}
-
-.application__form {
-
+  margin-left: 25px;
 }
 
 .application__header {
@@ -26,7 +22,7 @@
   font-size: 15px;
   line-height: 24px;
 
-  width: 100%;
+  width: 327px;
   min-height: 48px;
 
   margin-bottom: 20px;
@@ -36,7 +32,18 @@
   border-radius: 6px;
 
   &:placeholder {
-    opacity: 0.5;
+    color: fade-out($color-font-secondary, 0.5);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    box-shadow: 0 0 10px 2px $color-bg-primary;
+  }
+
+  &:active {
+    box-shadow: 0 0 14px 4px $color-accent;
   }
 }
 
@@ -46,7 +53,7 @@
   font-size: 15px;
   line-height: 21px;
 
-  width: 100%;
+  width: 327px;
   min-height: 51px;
 
   padding: 1px 0 0;
@@ -55,6 +62,19 @@
 
   border: none;
   border-radius: 6px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    box-shadow: 0 0 10px 2px $color-bg-primary;
+  }
+
+  &:active {
+    box-shadow: 0 0 14px 4px $color-accent;
+  }
 }
 
 @media (max-width: $tablet-only-width) {
@@ -65,16 +85,14 @@
     margin-left: 0;
   }
 
-  .application__form {
-
-  }
-
   .application__header {
     color: $color-font-primary;
     font-size: 18px;
 
-    margin-bottom: 30px;
-    padding: 0 220px;
+    width: 340px;
+
+    margin: 0 auto 30px;
+    padding: 0;
   }
 
   .application__input {
@@ -93,20 +111,9 @@
 }
 
 @media (max-width: $mobile-only-width) {
-  .application {
-    /*width: auto;*/
-
-    /*margin-top: 70px;*/
-    /*margin-left: 0;*/
-  }
-
-  .application__form {
-
-  }
-
   .application__header {
-    /*color: $color-font-primary;*/
-    /*font-size: 18px;*/
+
+    width: 288px;
 
     margin-bottom: 20px;
     padding: 0;
@@ -114,11 +121,9 @@
 
   .application__input {
     width: 288px;
-    /*margin: 0 auto 20px;*/
+
     padding-left: 25px;
     padding-top: 2px;
-/**/
-    /*border: 1px solid $color-border-primary;*/
   }
 
   .application__submit {

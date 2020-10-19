@@ -1,16 +1,6 @@
 .slogan {
   text-align: left;
-  width: 500px;
-
-  padding-left: 71px;
-}
-
-.slogan__main-logo-link {
-
-}
-
-.slogan__main-logo {
-
+  width: 387px;
 }
 
 .slogan__header {
@@ -26,7 +16,7 @@
 }
 
 .slogan__description {
-  color: $color-font-tertiary;
+  color: fade-out($color-bg-primary, 0.2);
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
@@ -43,12 +33,14 @@
     width: auto;
 
     padding-left: 0;
-    background-image: url(../img/main-bg-tablet@1x.jpg);
-    background-color: red;
-  }
+    background-image: url("../img/main-bg@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $color-font-secondary;
 
-  .slogan__main-logo-link {
-
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg@2x.jpg");
+    }
   }
 
   .slogan__main-logo {
@@ -68,23 +60,18 @@
 
   .slogan__description {
     text-align: center;
-
     font-size: 18px;
 
-    margin-top: 19px;
-    padding: 0 180px;
+    width: 435px;
+
+    margin: 19px auto 0;
+    padding: 0;
   }
 }
 
 @media (max-width: $mobile-only-width) {
   .slogan {
     min-height: 390px;
-
-    background-image: url(../img/main-bg-mobile@1x.jpg);
-  }
-
-  .slogan__main-logo-link {
-
   }
 
   .slogan__main-logo {
@@ -96,6 +83,8 @@
   }
 
   .slogan__description {
+    width: auto;
+
     padding: 0 20px;
   }
 }
