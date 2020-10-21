@@ -233,8 +233,7 @@ a {
   margin-bottom: 20px;
   padding-left: 30px;
   border: none;
-  border-radius: 6px;
-  -moz-appearance: textfield; }
+  border-radius: 6px; }
   .application input:placeholder {
     color: rgba(31, 31, 31, 0.5); }
   .application input:hover, .application input:focus {

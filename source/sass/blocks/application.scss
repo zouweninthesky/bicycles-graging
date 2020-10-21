@@ -31,8 +31,6 @@
   border: none;
   border-radius: 6px;
 
-  -moz-appearance:textfield;
-
   &:placeholder {
     color: fade-out($color-font-secondary, 0.5);
   }
