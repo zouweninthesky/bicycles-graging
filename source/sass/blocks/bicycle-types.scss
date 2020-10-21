@@ -5,7 +5,7 @@
   padding-bottom: 132px;
 }
 
-.bicycle-types__header {
+.bicycle-types h2 {
   color: $color-font-secondary;
   font-weight: 600;
   font-size: 30px;
@@ -13,7 +13,7 @@
   letter-spacing: -0.005em;
 }
 
-.bicycle-types__list {
+.bicycle-types ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,74 +25,10 @@
   padding-right: 139px;
 }
 
-.bicycle-types__item {
+.bicycle-types li {
   position: relative;
 
   width: 31%;
-
-  &--big-circle-hidden {
-    z-index: 2;
-
-    margin-top: 10px;
-
-    &::before {
-      content: "";
-
-      z-index: -1;
-
-      position: absolute;
-      top: 24%;
-      left: -16%;
-
-      width: 180px;
-      height: 180px;
-
-      border: 27px solid $color-accent;
-      border-radius: 100px;
-    }
-  }
-
-  &--small-squares {
-    margin-top: 39px;
-
-    &::before,
-    &::after {
-      content: "";
-
-      position: absolute;
-
-      width: 47px;
-      height: 47px;
-
-      border: 8px solid $color-accent;
-    }
-
-    &::before {
-      left: -20px;
-      top: -20px;
-    }
-
-    &::after {
-      right: -20px;
-      bottom: 30px;
-    }
-  }
-
-  &--small-circle {
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: -30px;
-      right: -30px;
-
-      width: 95px;
-      height: 95px;
-
-      border: 17px solid $color-accent;
-      border-radius: 50px;
-    }
-  }
 }
 
 @media (max-width: $tablet-only-width) {
@@ -101,12 +37,12 @@
     padding-bottom: 53px;
   }
 
-  .bicycle-types__header {
+  .bicycle-types h2 {
     font-size: 24px;
     line-height: 41px;
   }
 
-  .bicycle-types__list {
+  .bicycle-types ul {
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -114,50 +50,9 @@
     padding: 0 89px;
   }
 
-  .bicycle-types__item {
+  .bicycle-types li {
     margin-bottom: 49px;
     width: auto;
-
-    &:last-child {
-      margin-right: auto;
-      margin-bottom: 0;
-      margin-left: auto;
-    }
-
-    &--big-circle-hidden {
-      margin-top: 0;
-
-      &::before {
-        top: 201px;
-        left: -37px;
-
-        width: 127px;
-        height: 127px;
-
-        border-width: 18px;
-      }
-    }
-
-    &--small-squares {
-      margin-top: 0;
-
-      &::before,
-      &::after {
-        display: none;
-      }
-    }
-
-    &--small-circle {
-      &::before {
-        top: -20px;
-        right: -25px;
-
-        width: 68px;
-        height: 68px;
-
-        border-width: 13px;
-      }
-    }
   }
 }
 
@@ -166,24 +61,11 @@
     padding-bottom: 38px;
   }
 
-  .bicycle-types__list {
+  .bicycle-types ul {
     padding: 0 25px;
   }
 
-  .bicycle-types__item {
+  .bicycle-types li {
     margin-bottom: 42px;
-
-    &--big-circle-hidden {
-      &::before {
-        top: 201px;
-        left: -24px;
-      }
-    }
-
-    &--small-circle {
-      &::before {
-        right: -15px;
-      }
-    }
   }
 }

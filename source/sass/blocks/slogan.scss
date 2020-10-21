@@ -1,9 +1,11 @@
 .slogan {
   text-align: left;
   width: 387px;
+
+  margin-top: 9px;
 }
 
-.slogan__header {
+.slogan h2 {
   color: $color-bg-primary;
   font-weight: 700;
   font-size: 46px;
@@ -12,10 +14,9 @@
 
   margin-top: 26px;
   margin-bottom: 0;
-  padding-left: 1px;
 }
 
-.slogan__description {
+.slogan p {
   color: fade-out($color-bg-primary, 0.2);
   font-weight: 300;
   font-size: 20px;
@@ -23,7 +24,6 @@
   letter-spacing: -0.005em;
 
   margin-top: 25px;
-  padding-left: 1px;
   padding-right: 40px;
 }
 
@@ -32,10 +32,13 @@
     min-height: 340px;
     width: auto;
 
+    margin-top: 0;
     padding-left: 0;
+
     background-image: url("../img/main-bg@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-color: $color-font-secondary;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -43,12 +46,12 @@
     }
   }
 
-  .slogan__main-logo {
+  .slogan svg {
     margin-top: 25px;
     margin-left: 20px;
   }
 
-  .slogan__header {
+  .slogan h2 {
     text-align: center;
 
     font-size: 30px;
@@ -58,7 +61,7 @@
     padding-left: 0;
   }
 
-  .slogan__description {
+  .slogan p {
     text-align: center;
     font-size: 18px;
 
@@ -74,15 +77,15 @@
     min-height: 390px;
   }
 
-  .slogan__main-logo {
+  .slogan svg {
     margin-left: 15px;
   }
 
-  .slogan__header {
+  .slogan h2 {
     margin-top: 71px;
   }
 
-  .slogan__description {
+  .slogan p {
     width: auto;
 
     padding: 0 20px;

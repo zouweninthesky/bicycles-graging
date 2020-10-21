@@ -1,12 +1,12 @@
 .intro {
   min-height: 825px;
 
-  padding-top: 318px;
+  padding-top: 309px;
 
   background-image: url("../img/main-bg@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-color: $color-font-secondary;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

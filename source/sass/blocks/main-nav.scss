@@ -75,6 +75,7 @@
     background-color: $color-bg-primary;
 
     border: none;
+    border-radius: 0;
 
     &::before,
     &::after {
@@ -181,5 +182,11 @@
     position: absolute;
     right: 24px;
     top: 23px;
+  }
+}
+
+@media (max-width: $tablet-only-width) {
+  .main-nav__item {
+    padding-left: 16px;
   }
 }

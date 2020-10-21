@@ -43,8 +43,12 @@ a {
   color: inherit;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 .container {
-  max-width: 1440px;
+  max-width: $container-max-width;
   padding: 0;
   margin: 0 auto;
 }

@@ -6,7 +6,7 @@
   padding-bottom: 82px;
 }
 
-.main-footer__list {
+.main-footer ul {
   display: flex;
   justify-content: space-between;
 
@@ -17,27 +17,29 @@
   list-style: none;
 }
 
-.main-footer__item {
+.main-footer li {
   font-size: 16px;
   line-height: 22px;
   position: relative;
 }
 
-.main-footer__icon {
-  position: absolute;
+.main-footer__link {
+  &--mail svg {
+    position: absolute;
 
-  &--mail {
     left: -40px;
     top: 2px;
   }
 
-  &--phone {
+  &--phone svg {
+    position: absolute;
+
     left: -37px;
     top: -3px;
   }
 }
 
-.main-footer__link {
+.main-footer a {
   color: fade-out($color-font-primary, 0.5);
 
   &:hover,
@@ -58,21 +60,19 @@
     padding-bottom: 38px;
   }
 
-  .main-footer__list {
+  .main-footer ul {
     width: 540px;
 
     padding-left: 32px;
   }
 
-  .main-footer__icon {
-    &--mail {
+  .main-footer__link {
+    &--mail svg {
       left: -41px;
-      top: 2px;
     }
 
-    &--phone {
+    &--phone svg {
       left: -38px;
-      top: -3px;
     }
   }
 }
@@ -83,7 +83,7 @@
     padding-bottom: 20px;
   }
 
-  .main-footer__list {
+  .main-footer ul {
     flex-direction: column;
 
     width: auto;
@@ -91,7 +91,7 @@
     padding-left: 0;
   }
 
-  .main-footer__item {
+  .main-footer li {
     margin-bottom: 25px;
 
     &:last-child {
@@ -99,25 +99,26 @@
     }
   }
 
-  .main-footer__icon {
-    &--mail {
-      left: 9px;
-      top: 2px;
-    }
-
-    &--phone {
-      left: 38px;
-      top: -4px;
-    }
-  }
-
   .main-footer__link {
     &--mail {
-      padding-left: 50px;
+      & svg {
+        left: 9px;
+      }
+
+      & a {
+        padding-left: 50px;
+      }
     }
 
     &--phone {
-      padding-left: 26px;
+      & svg {
+        left: 38px;
+        top: -4px;
+      }
+
+      & a {
+        padding-left: 26px;
+      }
     }
   }
 }
