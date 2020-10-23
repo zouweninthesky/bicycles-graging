@@ -70,6 +70,9 @@ a {
 .hidden {
   overflow: hidden; }
 
+.sr-only {
+  display: none; }
+
 .container {
   max-width: 1440px;
   padding: 0;

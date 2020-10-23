@@ -52,14 +52,16 @@
 
   var onFormSubmit = function () {
     if (form) {
-      form.addEventListener('submit', function (evt) {
-        evt.preventDefault();
-        if (phoneExpression.test(phoneInput.value)) {
-          form.submit();
-        } else {
-          phoneInput.addEventListener('change', checkPhone);
-        }
-      });
+      if (phoneInput) {
+        form.addEventListener('submit', function (evt) {
+          evt.preventDefault();
+          if (phoneExpression.test(phoneInput.value)) {
+            form.submit();
+          } else {
+            phoneInput.addEventListener('change', checkPhone);
+          }
+        });
+      }
     }
   };
 

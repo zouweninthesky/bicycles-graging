@@ -12,8 +12,7 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore")
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
+var inject = require('gulp-inject');
 var del = require("del");
 
 gulp.task("css", function () {
@@ -52,7 +51,7 @@ gulp.task("refresh", function (done) {
 });
 
 gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
@@ -74,12 +73,19 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest("build"));
+gulp.task('html', function () {
+    var svgs = gulp.src('source/img/icon-*.svg')
+        .pipe(svgstore({ inlineSvg: true }))
+        .pipe(rename("sprite.svg"))
+        .pipe(gulp.dest("build/img"));
+
+    function fileContents (filePath, file) {
+        return file.contents.toString();
+    }
+
+    return gulp.src('source/index.html')
+        .pipe(inject(svgs, { transform: fileContents }))
+        .pipe(gulp.dest('build'));
 });
 
 gulp.task ("js", function () {
