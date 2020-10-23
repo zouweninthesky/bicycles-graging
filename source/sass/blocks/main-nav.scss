@@ -1,8 +1,8 @@
-.main-nav__toggle {
+.main-nav button {
   display: none;
 }
 
-.main-nav__list {
+.main-nav ul {
   position: absolute;
 
   left: 50%;
@@ -10,31 +10,38 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
 
   min-height: 62px;
-  width: 873px;
+  width: 100%;
 
   list-style: none;
 
   margin: 0;
-  padding: 21px 20px 0;
+  padding: 16px 228px 0 224px;
 
   &::after {
     content: "";
 
     position: absolute;
-    top: 62px;
-    left: 0;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    width: 100%;
+    width: 873px;
     height: 1px;
 
     background-color: fade-out($color-bg-primary, 0.8);
   }
 }
 
-.main-nav__link {
+.main-nav li {
+  margin: 5px 68px;
+}
+
+.main-nav a {
   color: fade-out($color-bg-primary, 0.3);
   font-weight: 300;
   font-size: 16px;
@@ -53,12 +60,12 @@
   }
 }
 
-.main-nav__link-icon {
+.main-nav svg {
   display: none;
 }
 
 @media (max-width: $tablet-only-width) {
-  .main-nav__toggle {
+  .main-nav button {
     display: block;
 
     z-index: 5;
@@ -100,7 +107,7 @@
     }
   }
 
-  .main-nav--closed .main-nav__toggle {
+  .main-nav--closed button {
     background-color: $color-accent;
 
     &::before {
@@ -122,7 +129,7 @@
     }
   }
 
-  .main-nav__list {
+  .main-nav ul {
     z-index: 3;
 
     position: absolute;
@@ -144,31 +151,32 @@
     }
   }
 
-  .main-nav--no-js .main-nav__list {
+  .main-nav--no-js ul {
     position: static;
 
     height: auto;
   }
 
-  .main-nav--closed .main-nav__list {
+  .main-nav--closed ul {
     display: none;
   }
 
-  .main-nav__item {
+  .main-nav li {
     text-align: left;
 
     position: relative;
 
     min-height: 60px;
+    width: 100%;
 
-    margin-bottom: 30px;
+    margin: 0 0 30px;
     padding-top: 17px;
     padding-left: 40px;
 
     background-color: $color-bg-menu;
   }
 
-  .main-nav__link {
+  .main-nav a {
     color: $color-font-menu;
     font-weight: 400;
     font-size: 20px;
@@ -176,7 +184,7 @@
     letter-spacing: normal;
   }
 
-  .main-nav__link-icon {
+  .main-nav svg {
     display: inline;
 
     position: absolute;
@@ -186,7 +194,7 @@
 }
 
 @media (max-width: $tablet-only-width) {
-  .main-nav__item {
+  .main-nav li {
     padding-left: 16px;
   }
 }

@@ -12,6 +12,7 @@
   letter-spacing: -0.005em;
 
   margin-bottom: 0;
+  padding-right: 10px;
 }
 
 .video-advice__video-wrapper {
@@ -76,6 +77,8 @@
 
   .video-advice h2 {
     font-size: 24px;
+
+    padding-right: 0;
   }
 
   .video-advice p {
@@ -114,13 +117,17 @@
   .video-advice {
     min-height: 384px;
 
-    padding-top: 63px;
+    padding-top: 64px;
+  }
+
+  .video-advice h2 {
+    padding-right: 12px;
   }
 
   .video-advice p {
     width: 288px;
 
-    margin-top: 21px;
+    margin-top: 20px;
     padding: 0;
   }
 

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Moon</title>
-    <link rel="preload" as="font" href="fonts/OpenSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="fonts/OpenSans-Light.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="fonts/OpenSans-Regular.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="fonts/OpenSans-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="fonts/OpenSans-Bold.woff" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" as="font" href="fonts/OpenSans-Light.woff" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" as="font" href="fonts/OpenSans-Regular.woff" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" as="font" href="fonts/OpenSans-SemiBold.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-Bold.woff2" type="font/woff2">
+    <link rel="preload" as="font" href="fonts/OpenSans-Light.woff2" type="font/woff2">
+    <link rel="preload" as="font" href="fonts/OpenSans-Regular.woff2" type="font/woff2">
+    <link rel="preload" as="font" href="fonts/OpenSans-SemiBold.woff2" type="font/woff2">
+    <link rel="preload" as="font" href="fonts/OpenSans-Bold.woff" type="font/woff">
+    <link rel="preload" as="font" href="fonts/OpenSans-Light.woff" type="font/woff">
+    <link rel="preload" as="font" href="fonts/OpenSans-Regular.woff" type="font/woff">
+    <link rel="preload" as="font" href="fonts/OpenSans-SemiBold.woff" type="font/woff">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -22,28 +22,28 @@
     </div>
     <header class="main-header">
       <nav class="main-header__nav main-nav main-nav--no-js">
-        <button type="button" class="main-nav__toggle"><span class="visually-hidden">Кнопка открытия меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a>
-          <svg class="main-nav__link-icon" width="8" height="12">
-            <use xlink:href="#icon-link-arrow"></use>
-          </svg>
-        </li>
-          <li class="main-nav__item"><a href="#bicycle-types" class="main-nav__link">Виды велосипедов</a>
-          <svg class="main-nav__link-icon" width="8" height="12">
-            <use xlink:href="#icon-link-arrow"></use>
-          </svg>
-        </li>
-          <li class="main-nav__item"><a href="#video-advice" class="main-nav__link">Видео про велосипеды</a>
-          <svg class="main-nav__link-icon" width="8" height="12">
-            <use xlink:href="#icon-link-arrow"></use>
-          </svg>
-        </li>
-          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a>
-          <svg class="main-nav__link-icon" width="8" height="12">
-            <use xlink:href="#icon-link-arrow"></use>
-          </svg>
-        </li>
+        <button type="button"><span class="visually-hidden">Кнопка открытия меню</span></button>
+        <ul>
+          <li><a href="#">О нас</a>
+            <svg width="8" height="12">
+              <use xlink:href="#icon-link-arrow"></use>
+            </svg>
+          </li>
+          <li><a href="#bicycle-types">Виды велосипедов</a>
+            <svg width="8" height="12">
+              <use xlink:href="#icon-link-arrow"></use>
+            </svg>
+          </li>
+          <li><a href="#video-advice">Видео про велосипеды</a>
+            <svg width="8" height="12">
+              <use xlink:href="#icon-link-arrow"></use>
+            </svg>
+          </li>
+          <li><a href="#contacts">Контакты</a>
+            <svg width="8" height="12">
+              <use xlink:href="#icon-link-arrow"></use>
+            </svg>
+          </li>
         </ul>
       </nav>
     </header>
@@ -52,7 +52,7 @@
         <div class="intro__wrapper">
           <h1 class="visually-hidden">Moon - магазин велосипедов</h1>
           <section class="slogan">
-            <a>
+            <a href="#">
               <svg width="70" height="20" aria-label="Логотип нашего магазина - стилизованное слово 'Moon' (Луна)">
                 <use xlink:href="#icon-main-logo"></use>
               </svg>
@@ -97,7 +97,7 @@
         <div class="bicycle-types__wrapper container">
           <h2>Виды велосипедов</h2>
           <ul>
-            <li class="bicycle-type bicycle-type--big-circle-hidden">
+            <li class="bicycle-types__big-circle-hidden bicycle-type">
               <figure>
                 <picture>
                   <source type="image/webp" srcset="img/bicycle-type-road@1x.webp 1x, img/bicycle-type-road@2x.webp 2x">
@@ -108,7 +108,7 @@
                 <figcaption>Дорожный велосипед</figcaption>
               </figure>
             </li>
-            <li class="bicycle-type bicycle-type--small-squares">
+            <li class="bicycle-types__small-squares bicycle-type">
               <figure>
                 <picture>
                   <source type="image/webp" srcset="img/bicycle-type-mountain@1x.webp 1x, img/bicycle-type-mountain@2x.webp 2x">
@@ -119,7 +119,7 @@
                 <figcaption>Горный велосипед</figcaption>
               </figure>
             </li>
-            <li class="bicycle-type bicycle-type--small-circle">
+            <li class="bicycle-types__small-circle bicycle-type">
               <figure>
                 <picture>
                   <source type="image/webp" srcset="img/bicycle-type-kids@1x.webp 1x, img/bicycle-type-kids@2x.webp 2x">
@@ -188,6 +188,5 @@
     </footer>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
-
   </body>
 </html>

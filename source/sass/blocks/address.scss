@@ -10,6 +10,7 @@
   letter-spacing: -0.005em;
 
   margin-bottom: 0;
+  padding-right: 11px;
 }
 
 .address p {
@@ -19,6 +20,7 @@
   width: 500px;
 
   margin: 29px auto 40px;
+  padding-right: 15px;
 }
 
 @media (max-width: $tablet-only-width) {
@@ -28,6 +30,8 @@
 
   .address h2 {
     font-size: 24px;
+
+    padding-right: 0;
   }
 
   .address p {

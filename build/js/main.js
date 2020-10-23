@@ -1,7 +1,7 @@
 'use strict';
-(function (){
+(function () {
   var nav = document.querySelector('.main-nav');
-  var toggle = document.querySelector('.main-nav__toggle');
+  var toggle = nav.querySelector('button');
 
   var openMenu = function () {
     if (nav.classList.contains('main-nav--closed')) {
@@ -29,9 +29,8 @@
 
 (function () {
   var form = document.querySelector('.application__form');
-  var submitButton = form.querySelector('button');
   var phoneInput = document.querySelector('#phone-number');
-  var phoneExpression = /\+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}/;
+  var phoneExpression = /\+7|8 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}/;
   var errorMessage = 'Неподходящий формат телефона!';
 
   var initPhoneMask = function () {
@@ -51,14 +50,20 @@
     }
   };
 
-  form.addEventListener('submit', function (evt) {
-    evt.preventDefault();
-    if (phoneExpression.test(phoneInput.value)) {
-      form.submit();
-    } else {
-      phoneInput.addEventListener('change', checkPhone);
+  var onFormSubmit = function () {
+    if (form) {
+      form.addEventListener('submit', function (evt) {
+        evt.preventDefault();
+        if (phoneExpression.test(phoneInput.value)) {
+          form.submit();
+        } else {
+          phoneInput.addEventListener('change', checkPhone);
+        }
+      });
     }
-  });
+  };
+
+  onFormSubmit();
 
   initPhoneMask();
 })();

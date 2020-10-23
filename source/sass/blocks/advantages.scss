@@ -7,21 +7,25 @@
 
   margin-top: 151px;
   margin-bottom: 0;
+  padding-left: 17px;
 }
 
 .advantages ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   list-style: none;
 
   margin-top: 21px;
   margin-bottom: 131px;
-  padding: 0 130px;
+  padding: 0 118px;
 }
 
 .advantages li {
+  max-width: 253px;
+
   margin: 0 20px;
 }
 
@@ -50,20 +54,21 @@
     line-height: 41px;
 
     margin-top: 70px;
+    padding-left: 0;
   }
 
   .advantages ul {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding: 0 108px;
+    padding: 0 107px;
 
     margin-top: 2px;
     margin-bottom: 55px;
   }
 
   .advantages li {
-    width: 261px;
+    max-width: 261px;
 
     margin: 0 0 15px;
   }
@@ -79,13 +84,12 @@
     flex-direction: column;
     align-items: center;
 
+    margin-bottom: 67px;
     padding: 0;
-
-    margin-bottom: 107px;
   }
 
   .advantages li {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   .advantages h3 {
